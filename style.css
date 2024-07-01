@@ -1,0 +1,243 @@
+.bg {
+  background-image: url(./img/background-img.jpg);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.door-left {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background: white;
+  width: 50%;
+  height: 100%;
+  border-right: black solid 3px;
+  position: absolute;
+  z-index: 98;
+  left: 0%;
+  transition: all 1s;
+}
+/* left 0 -> -30으로 */
+.move-door-left {
+  left: -30%;
+  transition: all 1s;
+}
+
+.door-right {
+  display: flex;
+  align-items: center;
+  background: white;
+  width: 50%;
+  height: 100%;
+  border-left: black solid 3px;
+  position: absolute;
+  z-index: 98;
+  left: 50%;
+  transition: all 1s;
+}
+/* left 50 -> 80으로 */
+.move-door-right {
+  left: 80%;
+  transition: all 1s;
+}
+
+.door-dot {
+  margin: 40px;
+  width: 24px;
+  height: 24px;
+  border: black solid 3px;
+  border-radius: 50px;
+}
+
+.door-open {
+  display: block;
+  width: 120px;
+  height: 48px;
+  position: absolute;
+  border-radius: 12px;
+  z-index: 99;
+  background-color: white;
+  border: 3px solid black;
+  color: black;
+  font-weight: 700;
+  left: 47%;
+  top: 40%;
+  cursor: pointer;
+  transition: all 1s;
+}
+/* display: block에서 none으로 */
+.door-open-none {
+  display: none;
+  transition: all 1s;
+}
+
+.animate-bg {
+  left: 20%;
+  top: 0;
+  position: relative;
+  width: 1250px;
+  height: 1080px;
+}
+
+/* 아래부터 position: absolute; 전부 적용, svg 이미지 모음*/
+
+/* z-index 80~89 : 생쥐, 국물방울, 숟가락, 김 */
+/* z-index 50 : 솥(기준점) */
+/* z-index 40~49 : 모닥불 */
+
+img {
+  position: absolute;
+  left: 50%;
+  top: 200%;
+}
+
+.rat {
+  top: 8%;
+  left: 22%;
+  z-index: 80;
+}
+.pot {
+  top: 40%;
+  left: 24%;
+  z-index: 50;
+}
+.pot-bubble {
+  top: 37%;
+  left: 29%;
+  z-index: 82;
+}
+.bone-fire-bg {
+  top: 44%;
+  left: 20%;
+  z-index: 40;
+}
+.stones {
+  top: 40%;
+  left: 18%;
+  z-index: 41;
+}
+.woods {
+  top: 54%;
+  left: 25%;
+  z-index: 42;
+}
+
+/* 아래부터 애니메이션 적용 대상 */
+
+@keyframes spoon-move {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 10deg;
+  }
+}
+
+.spoon {
+  top: 8%;
+  left: 30.5%;
+  z-index: 81;
+  rotate: 0deg;
+  animation: spoon-move 0.3s infinite steps(60) alternate;
+}
+
+@keyframes fire1-move {
+  from {
+    top: 58%;
+    rotate: 0deg;
+  }
+  to {
+    top: 59%;
+    rotate: 4deg;
+  }
+}
+
+@keyframes fire2-move {
+  from {
+    top: 57%;
+    rotate: 0deg;
+  }
+  to {
+    top: 58%;
+    rotate: 4deg;
+  }
+}
+
+@keyframes fire3-move {
+  from {
+    top: 55%;
+    rotate: 0deg;
+  }
+  to {
+    top: 54%;
+    rotate: 4deg;
+  }
+}
+
+.fire-1 {
+  left: 41%;
+  z-index: 43;
+  animation: fire1-move 0.6s infinite steps(60) alternate;
+}
+.fire-2 {
+  left: 22%;
+  z-index: 44;
+  animation: fire2-move 0.5s infinite steps(60) alternate;
+}
+.fire-3 {
+  left: 20%;
+  z-index: 45;
+  animation: fire3-move 0.4s infinite steps(60) alternate;
+}
+
+@keyframes fume1-move {
+  from {
+    top: 38%;
+    opacity: 0%;
+  }
+  to {
+    top: 36%;
+    opacity: 80%;
+  }
+}
+
+@keyframes fume2-move {
+  from {
+    top: 36%;
+    opacity: 0%;
+  }
+  to {
+    top: 34%;
+    opacity: 80%;
+  }
+}
+
+@keyframes fume3-move {
+  from {
+    top: 35%;
+    opacity: 0%;
+  }
+  to {
+    top: 33%;
+    opacity: 80%;
+  }
+}
+
+.fume-1 {
+  left: 24%;
+  z-index: 89;
+  animation: fume1-move 1.3s infinite alternate;
+}
+
+.fume-2 {
+  left: 32%;
+  z-index: 89;
+  animation: fume2-move 0.7s infinite alternate;
+}
+
+.fume-3 {
+  left: 40%;
+  z-index: 89;
+  animation: fume3-move 1s infinite alternate;
+}

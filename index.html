@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mouse animation</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script>
+      function openDoor() {
+        const doorLeft = document.querySelector(".door-left");
+        const doorRight = document.querySelector(".door-right");
+        const doorOpen = document.querySelector(".door-open");
+        doorLeft.classList.add("move-door-left");
+        doorRight.classList.add("move-door-right");
+        doorOpen.classList.add("door-open-none");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="bg">
+      <button class="door-open" onclick="openDoor()">OPEN</button>
+      <div class="door-left">
+        <div class="door-dot"></div>
+      </div>
+      <div class="door-right">
+        <div class="door-dot"></div>
+      </div>
+      <!-- 아래부터 애니메이션 svg -->
+      <div class="animate-bg">
+        <img
+          class="rat"
+          src="./svg/rat.svg"
+          alt="쥐"
+          width="35%"
+          height="35%"
+        />
+        <img
+          class="bone-fire-bg"
+          src="./svg/bone-fire-bg.svg"
+          alt="모닥불 배경"
+          width="36%"
+          height="36%"
+        />
+        <img
+          class="fire-1"
+          src="./svg/fire-1.svg"
+          alt="불1"
+          width="15%"
+          height="15%"
+        />
+        <img
+          class="fire-2"
+          src="./svg/fire-2.svg"
+          alt="불2"
+          width="15%"
+          height="15%"
+        />
+        <img
+          class="fire-3"
+          src="./svg/fire-3.svg"
+          alt="불3"
+          width="15%"
+          height="15%"
+        />
+        <img
+          class="pot"
+          src="./svg/pot.svg"
+          alt="솥"
+          width="30%"
+          height="30%"
+        />
+        <img
+          class="pot-bubble"
+          src="./svg/pot-bubble.svg"
+          alt="국물방울"
+          width="15%"
+          height="22%"
+        />
+        <img
+          class="spoon"
+          src="./svg/spoon.svg"
+          alt="숟가락"
+          width="9%"
+          height="50%"
+        />
+        <img
+          class="stones"
+          src="./svg/stones.svg"
+          alt="모닥불 돌"
+          width="40%"
+          height="40%"
+        />
+        <img
+          class="woods"
+          src="./svg/woods.svg"
+          alt="모닥불 나무"
+          width="25%"
+          height="25%"
+        />
+        <img
+          src="./svg/fume.svg"
+          alt="연기1"
+          class="fume-1"
+          width="10%"
+          height="10%"
+        />
+        <img
+          src="./svg/fume.svg"
+          alt="연기2"
+          class="fume-2"
+          width="10%"
+          height="10%"
+        />
+        <img
+          src="./svg/fume.svg"
+          alt="연기3"
+          class="fume-3"
+          width="10%"
+          height="10%"
+        />
+      </div>
+    </div>
+  </body>
+</html>
