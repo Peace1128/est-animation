@@ -93,33 +93,33 @@ img {
 }
 
 .rat {
-  top: 8%;
-  left: 22%;
+  top: 3%;
+  left: 27%;
   z-index: 80;
 }
 .pot {
-  top: 40%;
-  left: 24%;
+  top: 44%;
+  left: 28%;
   z-index: 50;
 }
 .pot-bubble {
-  top: 37%;
-  left: 29%;
+  top: 38.5%;
+  left: 35%;
   z-index: 82;
 }
 .bone-fire-bg {
-  top: 44%;
-  left: 20%;
+  top: 52%;
+  left: 24%;
   z-index: 40;
 }
 .stones {
-  top: 40%;
+  top: 48%;
   left: 18%;
   z-index: 41;
 }
 .woods {
-  top: 54%;
-  left: 25%;
+  top: 67%;
+  left: 32%;
   z-index: 42;
 }
 
@@ -136,7 +136,7 @@ img {
 
 .spoon {
   top: 8%;
-  left: 30.5%;
+  left: 34.5%;
   z-index: 81;
   rotate: 0deg;
   animation: spoon-move 0.3s infinite steps(60) alternate;
@@ -144,49 +144,49 @@ img {
 
 @keyframes fire1-move {
   from {
-    top: 58%;
+    top: 68%;
     rotate: 0deg;
   }
   to {
-    top: 59%;
+    top: 69%;
     rotate: 4deg;
   }
 }
 
 @keyframes fire2-move {
   from {
-    top: 57%;
+    top: 66%;
     rotate: 0deg;
   }
   to {
-    top: 58%;
+    top: 65%;
     rotate: 4deg;
   }
 }
 
 @keyframes fire3-move {
   from {
-    top: 55%;
+    top: 63%;
     rotate: 0deg;
   }
   to {
-    top: 54%;
+    top: 64%;
     rotate: 4deg;
   }
 }
 
 .fire-1 {
-  left: 41%;
+  left: 45%;
   z-index: 43;
   animation: fire1-move 0.6s infinite steps(60) alternate;
 }
 .fire-2 {
-  left: 22%;
+  left: 24%;
   z-index: 44;
   animation: fire2-move 0.5s infinite steps(60) alternate;
 }
 .fire-3 {
-  left: 20%;
+  left: 24%;
   z-index: 45;
   animation: fire3-move 0.4s infinite steps(60) alternate;
 }
@@ -225,19 +225,19 @@ img {
 }
 
 .fume-1 {
-  left: 24%;
+  left: 32%;
   z-index: 89;
-  animation: fume1-move 1.3s infinite alternate;
+  animation: fume1-move 1.1s infinite alternate;
 }
 
 .fume-2 {
-  left: 32%;
+  left: 40%;
   z-index: 89;
-  animation: fume2-move 0.7s infinite alternate;
+  animation: fume2-move 0.8s infinite alternate;
 }
 
 .fume-3 {
-  left: 40%;
+  left: 48%;
   z-index: 89;
-  animation: fume3-move 1s infinite alternate;
+  animation: fume3-move 0.95s infinite alternate;
 }
