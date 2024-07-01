@@ -86,6 +86,7 @@
 /* z-index 50 : 솥(기준점) */
 /* z-index 40~49 : 모닥불 */
 
+
 img {
   position: absolute;
   left: 50%;
@@ -241,3 +242,5 @@ img {
   z-index: 89;
   animation: fume3-move 0.95s infinite alternate;
 }
+
+/* 완료 */
